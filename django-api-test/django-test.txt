@@ -1,0 +1,55 @@
+Django task
+===========
+
+This is a fairly simple task as the first stage in our Django developer recruitment
+process. The details of the API design is up to you, but you should create APIs to allow
+for the following:
+
+- Registration
+- Login
+- Retrieve personal details
+- Update personal details
+- Logout
+
+Personal details
+----------------
+
+Items marked with an asterisk are able to be updated through the "Update personal details"
+service. The "Update personal details" service should accept any subset of these fields
+to be updated, but return the whole - updated - object upon successful completion.
+
+- Full name
+- Date of birth
+- Username*
+- Password*
+- Email address*
+- Address*
+- Post code*
+- Job title*
+- Last login date & time
+- Sign up date & time
+
+Other considerations
+--------------------
+
+All responses should be returned in JSON.
+
+The APIs must handle errors gracefully, with appropriate JSON responses. There should be a
+standardised error format for all errors.
+
+The services should be named sensibly, and use appropriate HTTP methods to access the
+different pieces of functionality. Services accessed using an incorrect HTTP method
+should return an error.
+
+Use of third-party libraries is permitted, as long as their function is clear, and they
+don't introduce large amounts of unused code or functionality (e.g. there need not be any
+web/template files included in the project as there is no web element).
+
+Submission
+----------
+
+Please send a zipped file of all the Django code to django-interview@apptivation.co.uk.
+Please also include the database you used, with the admin interface enabled and an admin
+login and password so the data can be viewed and manipulated. Feel free to send any
+questions or queries to the above address. Additionally, please include any explanation
+or details you feel necessary in your submission email.
